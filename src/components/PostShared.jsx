@@ -1,7 +1,7 @@
 import React from "react";
 import { colors } from "../data/color";
 import { getReadingTime } from "../lib/readingtime";
-import formatDistance from "date-fns/formatDistance";
+import formatDistance from "date-fns/formatDistance/index.js";
 
 export const PostHead = ({ post }) => {
   return (
