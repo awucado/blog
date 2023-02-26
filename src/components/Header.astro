@@ -1,33 +1,33 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
 import { SITE_TITLE } from "../consts";
-import { RiGithubFill, RiTwitterFill } from "react-icons/ri/index.js";
+import { RiGithubLine, RiTwitterLine } from "react-icons/ri/index.js";
 ---
 
 <header class="w-full flex justify-center">
-  <div class="flex m-4 items-center justify-between max-w-5xl w-full">
+  <div class="flex p-8 items-center justify-between w-full">
     <a href="/">
       <img
         src="/icon-96x96.png"
-        class="w-14 hover:scale-110 duration-150"
+        class="w-12 hover:scale-110 duration-150"
         alt="Avatar"
       />
     </a>
 
-    <div class="flex gap-1">
+    <div class="flex gap-4 ">
       <a
-        class="text-sky-400 hover:scale-110 duration-150"
+        class="opacity-60 hover:opacity-80 duration-100 text-white"
         href="https://twitter.com/awucado"
         target="_blank"
       >
-        <RiTwitterFill size={35} />
+        <RiTwitterLine size={25} />
       </a>
       <a
-        class="text-black hover:scale-110 duration-150"
+        class="opacity-60 hover:opacity-80 duration-100 text-white"
         href="https://github.com/awucado"
         target="_blank"
       >
-        <RiGithubFill size={35} />
+        <RiGithubLine size={25} />
       </a>
     </div>
   </div>

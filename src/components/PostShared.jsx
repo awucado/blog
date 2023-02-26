@@ -5,7 +5,7 @@ import formatDistance from "date-fns/formatDistance/index.js";
 
 export const PostHead = ({ post }) => {
   return (
-    <div className="items-center flex mb-2 text-gray-500 text-sm">
+    <div className="items-center flex mb-2 opacity-60 text-white text-sm">
       {/* <time dateTime={date} color="inherit">
         {date}
       </time> */}
@@ -28,13 +28,12 @@ export function PostList({ post }) {
           boxShadow:
             "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);",
         }}
-        className="w-full rounded-lg duration-150 flex relative flex-col px-12 py-5 hover:scale-105"
+        className="opacity-60 hover:opacity-80 w-full rounded-lg duration-100 flex relative flex-col "
       >
-        <PostHead mb={3} post={post} />
-        <h2 className="font-bold text-black mb-1 text-2xl">
+        <h2 className="  text-white font-medium mb-1 text-2xl">
           {post.data.title}
         </h2>
-        <p className="text-gray-600 text-lg">{post.data.description}</p>
+        <PostHead mb={3} post={post} />
       </div>
     </a>
   );

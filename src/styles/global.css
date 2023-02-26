@@ -4,6 +4,7 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 body {
+  @apply bg-black;
   --main-font-color: #1a202c;
   --main-bgd-color: #f7fafc;
   --selection-bgd-color: #0c344b;
@@ -41,19 +42,16 @@ body {
   --grey-bg-color: #8fa6b2;
   --dark-color: #0c344b;
   word-wrap: break-word;
-  background-color: var(--white-color);
   color: var(--main-font-color);
   margin: 0;
   font-weight: 400;
   font-family: 'Inter';
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Barlow', system-ui, Arial, sans-serif;;
-  font-weight: 500; 
+
+p > a {
+  @apply opacity-50 text-white hover:opacity-60 
 }
-
-
 
 blockquote,
 dl,
@@ -119,5 +117,4 @@ button:focus {
 }
 
 pre.astro-code {
- @apply p-4 rounded-md
 }
