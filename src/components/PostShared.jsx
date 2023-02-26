@@ -23,13 +23,7 @@ export const PostHead = ({ post }) => {
 export function PostList({ post }) {
   return (
     <a href={`/${post.slug}/`} className="no-underline w-full">
-      <div
-        style={{
-          boxShadow:
-            "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);",
-        }}
-        className="opacity-60 hover:opacity-80 w-full rounded-lg duration-100 flex relative flex-col "
-      >
+      <div className="opacity-60 hover:opacity-80 w-full duration-100 flex relative flex-col ">
         <h2 className="  text-white font-medium mb-1 text-2xl">
           {post.data.title}
         </h2>
